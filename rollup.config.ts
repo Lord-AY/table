@@ -56,6 +56,18 @@ export default function rollup(options: RollupOptions): RollupOptions[] {
       },
     }),
     ...buildConfigs({
+      name: 'angular-table',
+      packageDir: 'packages/angular-table',
+      jsName: 'Angular',
+      outputFile: 'index',
+      entryFile: 'src/index.ts',
+      external: ['@angular/core', '@tanstack/table-core'],
+      globals: {
+        '@angular/core': 'vendor._angular_core',
+        '@angular/compiler': 'vendor._angular_compiler',
+      },
+    }),
+    ...buildConfigs({
       name: 'solid-table',
       packageDir: 'packages/solid-table',
       jsName: 'SolidTable',

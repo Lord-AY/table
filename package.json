@@ -71,9 +71,11 @@
     "./packages/solid-table",
     "./packages/svelte-table",
     "./packages/table-core",
-    "./packages/vue-table"
+    "./packages/vue-table",
+    "./packages/angular-table"
   ],
   "devDependencies": {
+    "@angular/core": "^17.0.8",
     "@babel/core": "^7.17.9",
     "@babel/plugin-proposal-nullish-coalescing-operator": "^7.18.6",
     "@babel/preset-env": "^7.16.11",
